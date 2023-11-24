@@ -1,0 +1,13 @@
+@media screen and (min-width: 600px) {
+	.main-grid {
+		display: grid;
+		gap: 4rem;
+		grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
+	}
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+}
