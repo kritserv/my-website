@@ -71,22 +71,72 @@
 body {
 	background-color: black;
 	color: white;
+	overflow: hidden;
 }
 
-a {
-	text-decoration: None;
-	color: black;
+h1 {
+	padding-left: 6px;
+	padding-right: 6px;
+	font-size: 1.88rem;
+}
+
+p {
+	padding-left: 6px;
+	padding-right: 6px;
+	font-size: 1.2rem;
+}
+.menu:active {
+	background-color: white!important;
+	transform: scale(1.15)!important;
 }
 
 .menu:hover {
 		background-color: darkgrey;
 		transform: scale(1.1);
-		transition: .2s ease-in-out;
+		transition: all .2s ease-in-out;
 		border: solid 2px gold;
+		cursor: pointer;
 }
 
 .menu {
 	background-color: grey;
-	transition: .2s ease-in-out;
+	transition: all .2s ease-in-out;
 	border: solid 3px white;
+}
+
+dialog {
+	opacity: 0;
+	scale: 0;
+	display: block;
+	transition: all .6s;
+	background-color: grey;
+	width: clamp(290px, 30vw, 800px);
+	height: clamp(600px, 50vh, 70vh);
+}
+
+dialog[open] {
+	opacity: 1;
+	scale: 1.1;
+}
+
+dialog::backdrop {
+	backdrop-filter: blur(5px);
+	background-color: rgba(0,0,0,0.2);
+}
+
+#close-dialog-btn {
+	margin-bottom: 2rem;
+	float: right;
+	right: 0;
+	font-size: 3rem;
+	background-color: rgba(0,0,0,0);
+	border: 0px;
+	transition: all .3s;
+}
+
+#close-dialog-btn:hover {
+	transform: rotate(-180deg);
+	scale: 1.15;
+	cursor: pointer;
+	transition: all .4s;
 }

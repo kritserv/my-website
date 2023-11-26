@@ -5,58 +5,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link rel="stylesheet" type="text/css" href="static/css/main.css">
-	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛺</text></svg>">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦉</text></svg>">
 	<title>Home | Krittipoom Personal Website</title>
 	
 </head>
 <body>
+	<div>
+		<dialog id="p" onclick="p.close()">
+			<button id="close-dialog-btn" onclick="p.close()">✖</button>
+			<h1>Projects</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</dialog>
+	</div>
 
+	<div>
+		<dialog id="r" onclick="r.close()">
+			<button id="close-dialog-btn" onclick="r.close()">✖</button>
+			<h1>Resume</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</dialog>
+	</div>
+
+	<div>
+		<dialog id="c" onclick="c.close()">
+			<button id="close-dialog-btn" onclick="c.close()">✖</button>
+			<h1>Contact</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</dialog>
+	</div>
+
+	<div>
+		<dialog id="s" onclick="s.close()">
+			<button id="close-dialog-btn" onclick="s.close()">✖</button>
+			<h1>Skills</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</dialog>
+	</div>
+			
 	<section class="main-grid">
-
+		
 		<div class="card">
-			<p>top or left area</p>
+			<p>left or top</p>
 		</div>
 
 		<div class="card">
 			<table class="menu-list">
 			  <tr>
 			    <td>
-			    	<a href="#">
-				    	<div class="menu">
-		    				<div class="menu-inner">
-		    					<h1>Projects</h1>
-		    				</div>
+			    	<button onclick="p.showModal()" class="menu">
+	    				<div class="menu-inner">
+	    					<h1>Projects</h1>
 		    			</div>
-	    			</a>
+	    			</button>
 	    		</td>
 			    <td>
-			    	<a href="#">
-					    <div class="menu">
-		    				<div class="menu-inner">
-		    					<h1>Resume</h1>
-		    				</div>
+			    	<button onclick="r.showModal()" class="menu">
+	    				<div class="menu-inner">
+	    					<h1>Resume</h1>
 		    			</div>
-	    			</a>
+	    			</button>
 			    </td>
 			  </tr>
 			  <tr>
 			    <td>
-			    	<a href="#">
-				    	<div class="menu">
-							<div class="menu-inner">
-								<h1>About</h1>
-							</div>
+			    	<button onclick="c.showModal()" class="menu">
+						<div class="menu-inner">
+							<h1>Contact</h1>
 						</div>
-					</a>
+					</button>
 			    </td>
 			    <td>
-			    <a href="#">
-				    <div class="menu">
+				    <button onclick="s.showModal()" class="menu">
 	    				<div class="menu-inner">
 	    					<h1>Skills</h1>
-	    				</div>
-	    			</div>
-    			</a>
+		    			</div>
+	    			</button>
 			    </td>
 			  </tr>
 			</table>
