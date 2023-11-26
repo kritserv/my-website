@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;700&display=swap');
+
 @media screen and (min-width: 600px) {
 	.main-grid {
 		display: grid;
@@ -72,18 +74,21 @@ body {
 	background-color: black;
 	color: white;
 	overflow: hidden;
+	font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
 h1 {
 	padding-left: 6px;
 	padding-right: 6px;
 	font-size: 1.88rem;
+	font-weight: 500;
 }
 
 p {
 	padding-left: 6px;
 	padding-right: 6px;
 	font-size: 1.2rem;
+	font-weight: 300;
 }
 .menu:active {
 	background-color: white!important;
