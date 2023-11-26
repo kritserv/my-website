@@ -26,20 +26,28 @@
 	}
 
 	.menu {
-		width: clamp(100px, 13vw, 300px);
-		height: clamp(100px, 13vw, 300px);
-		margin: 0.4vw;
+		width: clamp(150px, 11vw, 500px);
+		height: clamp(150px, 12vw, 500px);
+		margin: clamp(9px, 0.7vw, 33px);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		place-items: center;
 		border-radius: 5%;
+		transform: rotate(-45deg);
+		clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
 	}
 
 	.menu-inner {
-		margin: 1fr;
-		transform: rotate(-45deg);
 		font-size: 1.2rem;
+	}
+	
+	.menu:active {
+		transform: scale(1.15) rotate(-45deg)!important;
+	}
+	
+	.menu:hover {
+			transform: scale(1.1) rotate(-45deg);
 	}
 }
 
@@ -68,6 +76,13 @@
 		margin: 4px;
 		place-items: center;
 	}
+	.menu:active {
+		transform: scale(1.15)!important;
+	}
+	
+	.menu:hover {
+			transform: scale(1.1);
+	}
 }
 
 body {
@@ -92,21 +107,17 @@ p {
 }
 .menu:active {
 	background-color: white!important;
-	transform: scale(1.15)!important;
 }
 
 .menu:hover {
 		background-color: darkgrey;
-		transform: scale(1.1);
 		transition: all .2s ease-in-out;
-		border: solid 2px gold;
 		cursor: pointer;
 }
 
 .menu {
-	background-color: grey;
+	background-color: white;
 	transition: all .2s ease-in-out;
-	border: solid 3px white;
 }
 
 dialog {

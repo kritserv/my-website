@@ -41,15 +41,31 @@
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 		</dialog>
 	</div>
+	<div>
+		<dialog id="w" onclick="w.close()">
+			<button id="close-dialog-btn" onclick="w.close()">✖</button>
+			<h1>Work Experience</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</dialog>
+	</div>
 			
 	<section class="main-grid">
 		
 		<div class="card">
-			<p>left or top</p>
+			<p>left or top (responsive)</p>
 		</div>
 
 		<div class="card">
 			<table class="menu-list">
+			  <tr>
+			    <td>
+   			    	<button onclick="w.showModal()" class="menu">
+   	    				<div class="menu-inner">
+   	    					<h1>Works</h1>
+   		    			</div>
+   	    			</button>
+   			    </td>
+   			   </tr>
 			  <tr>
 			    <td>
 			    	<button onclick="p.showModal()" class="menu">
