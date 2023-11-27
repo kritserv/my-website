@@ -133,6 +133,15 @@ body {
 	font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
+h4 {
+	font-weight: 450;
+}
+
+#skills-icon {
+	width: clamp(40px, 4.3vw, 90px);
+	height: clamp(40px, 4.3vw, 90px);
+}
+	
 .menu:active {
 	background-color: white!important;
 }
@@ -173,6 +182,9 @@ dialog::backdrop {
 	background-color: rgba(0,0,0,0);
 	border: 0px;
 	transition: all .3s;
+	-webkit-user-select: none; /* select diable Safari */
+	-ms-user-select: none; /* select diable IE 10 and IE 11 */
+	user-select: none; /* select diable Standard syntax */
 }
 
 #close-dialog-btn:hover {
