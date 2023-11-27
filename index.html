@@ -10,81 +10,91 @@
 	
 </head>
 <body>
-	<div>
-		<dialog id="p">
-			<button id="close-dialog-btn" onclick="p.close()">✖</button>
-			<h1>Projects</h1>
-			<h4>Web Application</h4>
-			<p>. . .</p>
-			<h4>Data Analysis</h4>
-			<p>. . .</p>
-			<h4>Dashboard</h4>
-			<p>. . .</p>
-		</dialog>
-	</div>
+	<div class="hidden-dialog">
+		<div>
+			<dialog id="p">
+				<button id="close-dialog-btn" onclick="p.close()">✖</button>
+				<h1>Projects</h1>
+				<h4>Web Application</h4>
+				<p>. . .</p>
+				<h4>Data Analysis</h4>
+				<p>. . .</p>
+				<h4>Dashboard</h4>
+				<p>. . .</p>
+			</dialog>
+		</div>
 
-	<div>
-		<dialog id="r">
-			<button id="close-dialog-btn" onclick="r.close()">✖</button>
-			<h1>Resume</h1>
-			<p>. . .</p>
-		</dialog>
-	</div>
+		<div>
+			<dialog id="r">
+				<button id="close-dialog-btn" onclick="r.close()">✖</button>
+				<h1>Resume</h1>
+				<p>. . .</p>
+			</dialog>
+		</div>
 
-	<div>
-		<dialog id="c">
-			<button id="close-dialog-btn" onclick="c.close()">✖</button>
-			<h1>Contact</h1>
-			<p>Email: krittipoom@outlook.com</p>
-			<p>linkedIn: Krittipoom Phalachun</p>
-		</dialog>
-	</div>
+		<div>
+			<dialog id="c">
+				<button id="close-dialog-btn" onclick="c.close()">✖</button>
+				<h1>Contact</h1>
+				<p>Email: krittipoom@outlook.com</p>
+				<p>linkedIn: Krittipoom Phalachun</p>
+			</dialog>
+		</div>
 
-	<div>
-		<dialog id="s">
-			<button id="close-dialog-btn" onclick="s.close()">✖</button>
-			<h1>Skills</h1>
-			<h4>Languages & Usage</h4>
-			<img id="skills-icon" src="static/img/language/python.svg">
-			<p>Python- ML, Data Analysis, Data Transforming, Web Back-end</p>
-			<img id="skills-icon" src="static/img/language/r.svg">
-			<p>R- Data Analysis, Statistic, Forecast</p>
-			<img id="skills-icon" src="static/img/language/go.svg">
-			<p>Go- Web API</p>
-			<img id="skills-icon" src="static/img/language/bash.svg">
-			<p>Bash- Automation</p>
-			<img id="skills-icon" src="static/img/language/html.svg">
-			<img id="skills-icon" src="static/img/language/css.svg">
-			<p>HTML&CSS- Web Front-end</p>
-			<h1>Other Tools</h1>
-			<h4>Software</h4>
-			<img id="skills-icon" src="static/img/software/excel.svg">
-			<img id="skills-icon" src="static/img/software/tableau.svg">
-			<img id="skills-icon" src="static/img/software/powerbi.svg">
-			<img id="skills-icon" src="static/img/software/rapidminer.svg">
-			<img id="skills-icon" src="static/img/software/docker.svg">
-			<img id="skills-icon" src="static/img/software/git.svg">
-			<h4>Database</h4>
-			<img id="skills-icon" src="static/img/database/mysql.svg">
-			<img id="skills-icon" src="static/img/database/sqlite.svg">
-			<img id="skills-icon" src="static/img/database/postgresql.svg">	
-			<img id="skills-icon" src="static/img/database/mongodb.svg">
-			<h4>Kernel</h4>
-			<img id="skills-icon" src="static/img/os/linux.svg">
-			<h4>Deployment</h4>
-			<img id="skills-icon" src="static/img/deploy/aws.svg">
-			<img id="skills-icon" src="static/img/deploy/pythonanywhere.svg">
-			
-		</dialog>
-	</div>
-	<div>
-		<dialog id="w">
-			<button id="close-dialog-btn" onclick="w.close()">✖</button>
-			<h1>Work Experience</h1>
-			<h4>Back-End Developer Intern</h4>
-			<h4>3 July 23 - 31 October 23 (4 months)</h4>
-			<p>I worked in Business Development and Consumer Experience at Amarin Corporations Public Company Limited, a leading media and lifestyle company in Thailand. My job involves creating dashboards with Django Python frameworks to display summary statistics and visitor counts for trade exhibitions. I also use data visualization techniques to analyze visitor journeys and enhance customer satisfaction.</p>
-		</dialog>
+		<div>
+			<dialog id="s">
+				<button id="close-dialog-btn" onclick="s.close()">✖</button>
+				<h1>Skills</h1>
+				<h4>Languages & Usage</h4>
+				<img id="skills-icon" src="static/img/language/python.svg">
+				<p>Python- ML, Data Analysis, Data Transforming, Web Back-end</p>
+				<img id="skills-icon" src="static/img/language/r.svg">
+				<p>R- Data Analysis, Statistic, Forecast</p>
+				<img id="skills-icon" src="static/img/language/go.svg">
+				<p>Go- Web API</p>
+				<img id="skills-icon" src="static/img/language/bash.svg">
+				<p>Bash- Automation</p>
+				<img id="skills-icon" src="static/img/language/html.svg">
+				<img id="skills-icon" src="static/img/language/css.svg">
+				<p>HTML&CSS- Web Front-end</p>
+				<br>
+				<h1>Other Tools</h1>
+				<h4>Software</h4>
+				<img id="skills-icon" src="static/img/software/excel.svg">
+				<img id="skills-icon" src="static/img/software/tableau.svg">
+				<img id="skills-icon" src="static/img/software/powerbi.svg">
+				<img id="skills-icon" src="static/img/software/rapidminer.svg">
+				<img id="skills-icon" src="static/img/software/docker.svg">
+				<img id="skills-icon" src="static/img/software/git.svg">
+				<p>MS Excel, Tableau, MS PowerBI, RapidMiner, Docker, Git</p>
+				<br>
+				<h4>Database</h4>
+				<img id="skills-icon" src="static/img/database/mysql.svg">
+				<img id="skills-icon" src="static/img/database/sqlite.svg">
+				<img id="skills-icon" src="static/img/database/postgresql.svg">	
+				<img id="skills-icon" src="static/img/database/mongodb.svg">
+				<p>MySQL, SQLite, PostgreSQL, MongoDB</p>
+				<br>
+				<h4>Kernel</h4>
+				<img id="skills-icon" src="static/img/os/linux.svg">
+				<p>Linux (Debian-based or Fedora)</p>
+				<br>
+				<h4>Deployment</h4>
+				<img id="skills-icon" src="static/img/deploy/aws.svg">
+				<img id="skills-icon" src="static/img/deploy/pythonanywhere.svg">
+				<p>AWS, Pythonanywhere</p>
+				
+			</dialog>
+		</div>
+		<div>
+			<dialog id="w">
+				<button id="close-dialog-btn" onclick="w.close()">✖</button>
+				<h1>Work Experience</h1>
+				<h4>Back-End Developer Intern</h4>
+				<h4>3 July 23 - 31 October 23 (4 months)</h4>
+				<p>I worked in Business Development and Consumer Experience at Amarin Corporations Public Company Limited, a leading media and lifestyle company in Thailand. My job involves creating dashboards with Django Python frameworks to display summary statistics and visitor counts for trade exhibitions. I also use data visualization techniques to analyze visitor journeys and enhance customer satisfaction.</p>
+			</dialog>
+		</div>
 	</div>
 			
 	<section class="main-grid">
