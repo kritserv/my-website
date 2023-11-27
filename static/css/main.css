@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;700&display=swap');
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 800px) {
 	.main-grid {
 		display: grid;
 		gap: 10rem;
@@ -26,8 +26,8 @@
 	}
 
 	.menu {
-		width: clamp(150px, 11vw, 500px);
-		height: clamp(150px, 12vw, 500px);
+		width: clamp(120px, 11vw, 500px);
+		height: clamp(120px, 12vw, 500px);
 		margin: clamp(9px, 0.7vw, 33px);
 		display: flex;
 		flex-direction: column;
@@ -47,28 +47,48 @@
 	}
 	
 	.menu:hover {
-			transform: scale(1.1) rotate(-45deg);
+		transform: scale(1.1) rotate(-45deg);
 	}
+
+	dialog {
+		width: clamp(290px, 30vw, 800px);
+		height: clamp(600px, 50vh, 70vh);
+	}
+
+	h1 {
+		padding-left: 6px;
+		padding-right: 6px;
+		font-size: 1.58rem;
+		font-weight: 500;
+	}
+
+	p {
+		padding-left: 6px;
+		padding-right: 6px;
+		font-size: 1.2rem;
+		font-weight: 300;
+	}
+
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
 	.card {
-		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		place-items: center;
+		position: fixed;
+		top: 0;
 	}
 	
 	.menu-list {
-		margin-left: 2vw;
-		margin-right: 5vw;
-		position: absolute;
-		justify-content: center;
-		margin-top: clamp(200px, 130vh, 1200px);
+		position: fixed;
+		display: flex;
+		bottom: clamp(20px, 15vh, 50px);
+		left: 15vw;
 	}
 
 	.menu {
-		width: clamp(100px, 40vw, 350px);
+		width: clamp(80px, 30vw, 300px);
+		height: clamp(10px, 30vh, 60px);
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
@@ -76,13 +96,34 @@
 		margin: 4px;
 		place-items: center;
 	}
+
 	.menu:active {
 		transform: scale(1.15)!important;
 	}
 	
 	.menu:hover {
-			transform: scale(1.1);
+		transform: scale(1.1);
 	}
+
+	dialog {
+		width: clamp(100px, 80vw, 300px);
+		height: clamp(200px, 80vh, 600px);
+		left: 0;
+		top: 0;
+	}
+
+	h1 {
+		padding-left: 3px;
+		padding-right: 3px;
+		font-weight: 400;
+	}
+
+	p {
+		padding-left: 2px;
+		padding-right: 2px;
+		font-weight: 300;
+	}
+
 }
 
 body {
@@ -92,26 +133,13 @@ body {
 	font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
-h1 {
-	padding-left: 6px;
-	padding-right: 6px;
-	font-size: 1.88rem;
-	font-weight: 500;
-}
-
-p {
-	padding-left: 6px;
-	padding-right: 6px;
-	font-size: 1.2rem;
-	font-weight: 300;
-}
 .menu:active {
 	background-color: white!important;
 }
 
 .menu:hover {
-		background-color: darkgrey;
-		transition: all .2s ease-in-out;
+	background-color: darkgrey;
+	transition: all .2s ease-in-out;
 		cursor: pointer;
 }
 
@@ -126,13 +154,11 @@ dialog {
 	display: block;
 	transition: all .6s;
 	background-color: grey;
-	width: clamp(290px, 30vw, 800px);
-	height: clamp(600px, 50vh, 70vh);
 }
 
 dialog[open] {
 	opacity: 1;
-	scale: 1.1;
+	scale: 1;
 }
 
 dialog::backdrop {
@@ -143,7 +169,6 @@ dialog::backdrop {
 #close-dialog-btn {
 	margin-bottom: 2rem;
 	float: right;
-	right: 0;
 	font-size: 3rem;
 	background-color: rgba(0,0,0,0);
 	border: 0px;
@@ -152,7 +177,7 @@ dialog::backdrop {
 
 #close-dialog-btn:hover {
 	transform: rotate(-180deg);
-	scale: 1.15;
+	scale: 0.98;
 	cursor: pointer;
 	transition: all .4s;
 }
