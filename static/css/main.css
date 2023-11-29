@@ -7,6 +7,10 @@ body {
 	font-family: 'IBM Plex Sans Thai', sans-serif;
 }
 
+.menu-inner {
+	font-family: 'IBM Plex Sans Thai', sans-serif;
+}
+
 @media screen and (min-width: 800px) {
 	.main-grid {
 		display: grid;
@@ -47,7 +51,6 @@ body {
 
 	.menu-inner {
 		font-size: 1.2rem;
-		font-family: 'IBM Plex Sans Thai', sans-serif;
 	}
 	
 	.menu:active {
