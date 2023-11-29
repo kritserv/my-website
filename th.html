@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦉</text></svg>">
+	<title>หน้าแรก | เว็บไซต์ส่วนตัวกฤติภูมิ</title>
+	
+</head>
+<body>
+	<div class="hidden-dialog">
+		<div>
+			<dialog id="p">
+				<button id="close-dialog-btn" onclick="p.close()">✖</button>
+				<h1>โปรเจกต์</h1>
+			</dialog>
+		</div>
+
+		<div>
+			<dialog id="r">
+				<button id="close-dialog-btn" onclick="r.close()">✖</button>
+				<h1>ประวัติย่อ</h1>
+				<p>. . .</p>
+			</dialog>
+		</div>
+
+		<div>
+			<dialog id="c">
+				<button id="close-dialog-btn" onclick="c.close()">✖</button>
+				<h1>ติดต่อ</h1>
+				<p>อีเมล: krittipoom@outlook.com</p>
+				<p>linkedIn: Krittipoom Phalachun</p>
+			</dialog>
+		</div>
+
+		<div>
+			<dialog id="s">
+				<button id="close-dialog-btn" onclick="s.close()">✖</button>
+				<h1>ทักษะและความสามารถ</h1>
+				<h4>ภาษาและการใช้งาน</h4>
+				<img id="skills-icon" src="static/img/language/python.svg">
+				<p>Python- ML, Data Analysis, Data Transforming, Web Back-end</p>
+				<img id="skills-icon" src="static/img/language/r.svg">
+				<p>R- Data Analysis, Statistic, Forecast</p>
+				<img id="skills-icon" src="static/img/language/go.svg">
+				<p>Go- Web API</p>
+				<img id="skills-icon" src="static/img/language/bash.svg">
+				<p>Bash- Automation</p>
+				<img id="skills-icon" src="static/img/language/html.svg">
+				<img id="skills-icon" src="static/img/language/css.svg">
+				<p>HTML&CSS- Web Front-end</p>
+				<br>
+				<h1>เครื่องมืออื่นๆ</h1>
+				<h4>ซอฟต์แวร์</h4>
+				<img id="skills-icon" src="static/img/software/excel.svg">
+				<img id="skills-icon" src="static/img/software/tableau.svg">
+				<img id="skills-icon" src="static/img/software/powerbi.svg">
+				<img id="skills-icon" src="static/img/software/rapidminer.svg">
+				<img id="skills-icon" src="static/img/software/docker.svg">
+				<img id="skills-icon" src="static/img/software/git.svg">
+				<p>MS Excel, Tableau, MS PowerBI, RapidMiner, Docker, Git</p>
+				<br>
+				<h4>ฐานข้อมูล</h4>
+				<img id="skills-icon" src="static/img/database/mysql.svg">
+				<img id="skills-icon" src="static/img/database/sqlite.svg">
+				<img id="skills-icon" src="static/img/database/postgresql.svg">	
+				<img id="skills-icon" src="static/img/database/mongodb.svg">
+				<p>MySQL, SQLite, PostgreSQL, MongoDB</p>
+				<br>
+				<h4>เคอร์เนล</h4>
+				<img id="skills-icon" src="static/img/os/linux.svg">
+				<p>Linux (Debian-based or Fedora)</p>
+				<br>
+				<h4>การ deploy</h4>
+				<img id="skills-icon" src="static/img/deploy/aws.svg">
+				<img id="skills-icon" src="static/img/deploy/pythonanywhere.svg">
+				<p>AWS, Pythonanywhere</p>
+				
+			</dialog>
+		</div>
+		<div>
+			<dialog id="w">
+				<button id="close-dialog-btn" onclick="w.close()">✖</button>
+				<h1>ประสบการณ์การทำงาน</h1>
+				<h4>Back-End Developer Intern</h4>
+				<h4>3 ก.ค. 66 - 31 ต.ค. 66 (4 เดือน)</h4>
+				<p>ฉันทำงาน Business Development and Consumer Experience ที่บริษัท อมรินทร์ คอร์ปอเรชั่น จำกัด (มหาชน) ซึ่งเป็นบริษัทสื่อและไลฟ์สไตล์ชั้นนำของประเทศไทย งานของผมเกี่ยวข้องกับการสร้างแดชบอร์ดด้วยเฟรมเวิร์ก Django Python เพื่อแสดงสถิติสรุปและจำนวนผู้เข้าชมสำหรับงานแสดงสินค้า นอกจากนั้น ผมวิเคราะห์การเดินทางของผู้เข้าชมและเพิ่มความพึงพอใจของลูกค้า</p>
+			</dialog>
+		</div>
+	</div>
+			
+	<section class="main-grid">
+		
+		<div class="card">
+			<p>. . .</p>
+		</div>
+
+		<div class="card">
+			<table class="menu-list">
+			  <tr>
+			    <td>
+   			    	<button onclick="w.showModal()" class="menu">
+   	    				<div class="menu-inner">
+   	    					<h1>งาน</h1>
+   		    			</div>
+   	    			</button>
+   			    </td>
+   			   </tr>
+			  <tr>
+			    <td>
+			    	<button onclick="p.showModal()" class="menu">
+	    				<div class="menu-inner">
+	    					<h1>โปรเจกต์​</h1>
+		    			</div>
+	    			</button>
+	    		</td>
+			    <td>
+			    	<button onclick="r.showModal()" class="menu">
+	    				<div class="menu-inner">
+	    					<h1>ประวัติย่อ</h1>
+		    			</div>
+	    			</button>
+			    </td>
+			  </tr>
+			  <tr>
+			    <td>
+			    	<button onclick="c.showModal()" class="menu">
+						<div class="menu-inner">
+							<h1>ติดต่อ</h1>
+						</div>
+					</button>
+			    </td>
+			    <td>
+				    <button onclick="s.showModal()" class="menu">
+	    				<div class="menu-inner">
+	    					<h1>ทักษะ</h1>
+		    			</div>
+	    			</button>
+			    </td>
+			  </tr>
+			</table>
+		</div>
+		
+	</section>
+
+	<div class="settings">
+		<div>
+			<dialog id="setting">
+				<button id="close-dialog-btn" onclick="setting.close()">✖</button>
+				<h1>เปลี่ยนภาษา</h1>
+				<a href="/" id="language-btn">🇬🇧 ภาษาอังกฤษ</a>
+			</dialog>
+		</div>
+		<button onclick="setting.showModal()" id="setting-btn">
+			⚙️
+		</button>
+	</div>
+
+
+</body>
+</html>
