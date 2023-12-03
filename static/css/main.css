@@ -4,6 +4,7 @@ body {
 	overflow: hidden;
 	font-family: 'IBM Plex Sans Thai', sans-serif;
 	background-image: url(static/img/titlescreen/background.png);
+	background-position-x: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
