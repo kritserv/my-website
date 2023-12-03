@@ -3,7 +3,6 @@
 html, body {margin: 0; height: 100%; overflow: hidden}
     
 body {
-	overflow: hidden;
 	font-family: 'IBM Plex Sans Thai', sans-serif;
 	background-image: url(https://raw.githubusercontent.com/kritserv/my-website/main/static/img/titlescreen/background.png);
 	background-position-x: center;
@@ -140,6 +139,9 @@ span:nth-child(7) {
 	h1 {
 		font-size: 20px;
 	}
+	.dialog-inner {
+		width: 70vw;
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -148,6 +150,10 @@ span:nth-child(7) {
 		margin-right: 11.5rem;
 		height: clamp(50px, 7vh, 60px);
 	}
+	.dialog-inner {
+		width: 30vw;
+	}
+	
 }
 
 #center {
@@ -166,11 +172,12 @@ dialog {
 	height: 100%;
 	background-color: rgba(0,0,0,0.6);
 	backdrop-filter: blur(5px);
+	overflow-x: hidden
 }
 
 .dialog-inner {
-	width: 30vw;
 	color: white;
-	margin-left: 1.5rem;
+	margin-left: 1rem;
+	margin-right: 3rem;
 	margin-top: 2rem;
 }
