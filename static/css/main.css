@@ -157,10 +157,7 @@ span:nth-child(7) {
 }
 
 #back-button {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	position: absolute;
+	position: sticky;
 	bottom: 2vh;
 }
 
