@@ -1,242 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;700&display=swap');
 
 body {
-	height: 100%;
-	background-color: black;
-	color: white;
 	overflow: hidden;
 	font-family: 'IBM Plex Sans Thai', sans-serif;
+	background-image: url(static/img/titlescreen/background.png);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
-.menu-inner {
-	font-family: 'IBM Plex Sans Thai', sans-serif;
+.title {
+	margin-top: 6rem;
+	margin-bottom: 4rem;
+	width: clamp(250px, 70vw, 1000px);
 }
 
-@media screen and (min-width: 800px) {
-	.main-grid {
-		display: grid;
-		gap: 10rem;
-		grid-template-columns: minmax(240px, 1fr) minmax(240px, 1fr);
-	}
+.menu-item-bg {
+	width: clamp(200px, 60vw, 600px);
+	margin-bottom: 1rem;
+	height: clamp(50px, 6vh, 60px);
+}
 
-	.card {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		place-items: center;
+@media screen and (max-width: 1000px) {
+	.menu-item-sm {
+		width: clamp(90px, 29vw, 490px);
+		margin-right: 5px;
+		height: clamp(50px, 7vh, 60px);
 	}
-	
-	.menu-list {
-		transform: rotateY(0deg) rotate(45deg);
-		width: clamp(200px, 26vw, 600px);
-		height: clamp(200px, 26vw, 600px);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		place-items: center;
-		margin-top: 20vh;
-	}
-
-	.menu {
-		width: clamp(120px, 11vw, 500px);
-		height: clamp(120px, 12vw, 500px);
-		margin: clamp(9px, 0.7vw, 33px);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		place-items: center;
-		border-radius: 5%;
-		transform: rotate(-45deg);
-		clip-path: polygon(0 25%, 50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%);
-	}
-
-	.menu-inner {
-		font-size: 1.2rem;
-	}
-	
-	.menu:active {
-		transform: scale(1.15) rotate(-45deg)!important;
-	}
-	
-	.menu:hover {
-		transform: scale(1.1) rotate(-45deg);
-	}
-
-	dialog {
-		width: clamp(290px, 30vw, 800px);
-		height: clamp(600px, 50vh, 70vh);
-	}
-
 	h1 {
-		padding-left: 6px;
-		padding-right: 6px;
-		font-size: 1.58rem;
-		font-weight: 500;
+		font-size: 20px;
 	}
-
-	p {
-		padding-left: 6px;
-		padding-right: 6px;
-		font-size: 1.2rem;
-		font-weight: 300;
-	}
-
 }
 
-@media screen and (max-width: 800px) {
-	.card {
-		justify-content: center;
-		place-items: center;
-		position: fixed;
-		top: 0;
+@media screen and (min-width: 1000px) {
+	.menu-item-sm {
+		width: clamp(20%, 100%, 100%);
+		margin-right: 11.5rem;
+		height: clamp(50px, 7vh, 60px);
 	}
-	
-	.menu-list {
-		position: fixed;
-		display: flex;
-		bottom: clamp(20px, 15vh, 50px);
-		left: 15vw;
-	}
-
-	.menu {
-		width: clamp(80px, 30vw, 300px);
-		height: clamp(10px, 30vh, 60px);
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		border: solid 1px;
-		margin: 4px;
-		place-items: center;
-	}
-
-	.menu:active {
-		transform: scale(1.15)!important;
-	}
-	
-	.menu:hover {
-		transform: scale(1.1);
-	}
-
-	dialog {
-		width: clamp(100px, 80vw, 300px);
-		height: clamp(200px, 80vh, 600px);
-		left: 0;
-		top: 0;
-	}
-
-	h1 {
-		padding-left: 3px;
-		padding-right: 3px;
-		font-weight: 400;
-	}
-
-	p {
-		padding-left: 2px;
-		padding-right: 2px;
-		font-weight: 300;
-	}
-
 }
 
-h4 {
-	font-weight: 450;
+#center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#skills-icon {
-	width: clamp(40px, 4.3vw, 90px);
-	height: clamp(40px, 4.3vw, 90px);
-}
-	
-.menu:active {
-	background-color: white!important;
-}
-
-.menu:hover {
-	background-color: darkgrey;
-	transition: all .2s ease-in-out;
-		cursor: pointer;
-}
-
-.menu {
-	background-color: white;
-	transition: all .2s ease-in-out;
+#back-button {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	position: absolute;
+	bottom: 2vh;
 }
 
 dialog {
-	opacity: 0;
-	scale: 0;
-	display: block;
-	transition: all .6s;
-	background-color: grey;
-}
-
-dialog[open] {
-	opacity: 1;
-	scale: 1;
-}
-
-dialog::backdrop {
+	width: 96vw;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
 	backdrop-filter: blur(5px);
-	background-color: rgba(0,0,0,0.2);
 }
 
-#close-dialog-btn {
-	margin-bottom: 2rem;
-	float: right;
-	font-size: 3rem;
-	background-color: rgba(0,0,0,0);
-	border: 0px;
-	transition: all .3s;
-	-webkit-user-select: none; /* select diable Safari */
-	-ms-user-select: none; /* select diable IE 10 and IE 11 */
-	user-select: none; /* select diable Standard syntax */
-}
-
-#close-dialog-btn:hover {
-	transform: rotate(-180deg);
-	scale: 0.98;
-	cursor: pointer;
-	transition: all .4s;
-}
-
-.settings {
-	position: absolute;
-	top: clamp(25px, 5vw, 300px);
-	left: clamp(25px, 5vw, 300px);
-}
-
-#language-btn {
-	border: 2px solid white;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-decoration: none;
-	font-size: 25px;
-	background-color: white;
-	color: black;
-	transition: all .4s;
-}
-
-#language-btn:hover {
-	background-color: lightblue;
+.dialog-inner {
+	width: 30vw;
 	color: white;
-	transition: all .4s;
-}
-
-#language-btn:active {
-	color: black;
-}
-
-#setting-btn {
-	background-color: rgba(0,0,0,0);
-	border: 0;
-	transition: all .4s;
-	-webkit-user-select: none; /* select diable Safari */
-	-ms-user-select: none; /* select diable IE 10 and IE 11 */
-	user-select: none; /* select diable Standard syntax */
-}
-
-#setting-btn:hover {
-	transform: rotate(-90deg);
-	transition: all .4s;
-	cursor: pointer;
+	margin-left: 1.5rem;
+	margin-top: 2rem;
 }

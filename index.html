@@ -11,156 +11,73 @@
 </head>
 <body>
 	<div class="hidden-dialog">
-		<div>
-			<dialog id="p">
-				<button id="close-dialog-btn" onclick="p.close()">✖</button>
+		<dialog id="p">
+			<div class="dialog-inner">
 				<h1>Projects</h1>
-				<h4>. . .</h4>
-				<p>. . .</p>
-			</dialog>
-		</div>
-
-		<div>
-			<dialog id="b">
-				<button id="close-dialog-btn" onclick="b.close()">✖</button>
+				<h4> ... </h4>
+				<p> ... </p>
+			</div>
+			<button class="menu-item-bg" id="back-button" onclick="p.close()"><h1>Back</h1></button>
+		</dialog>
+		<dialog id="b">
+			<div class="dialog-inner">
 				<h1>Blog</h1>
-				<h4>. . .</h4>
-				<p>. . .</p>
-			</dialog>
-		</div>
-
-		<div>
-			<dialog id="c">
-				<button id="close-dialog-btn" onclick="c.close()">✖</button>
-				<h1>Contact</h1>
-				<p>Email: krittipoom@outlook.com</p>
-				<p>linkedIn: Krittipoom Phalachun</p>
-			</dialog>
-		</div>
-
-		<div>
-			<dialog id="s">
-				<button id="close-dialog-btn" onclick="s.close()">✖</button>
-				<h1>Skills</h1>
-				<h4>Languages & Usage</h4>
-				<img id="skills-icon" src="static/img/language/python.svg">
-				<p>Python- ML, Data Analysis, Data Transforming, Web Back-end</p>
-				<img id="skills-icon" src="static/img/language/r.svg">
-				<p>R- Data Analysis, Statistic, Forecast</p>
-				<img id="skills-icon" src="static/img/language/go.svg">
-				<p>Go- Web API</p>
-				<img id="skills-icon" src="static/img/language/bash.svg">
-				<p>Bash- Automation</p>
-				<img id="skills-icon" src="static/img/language/html.svg">
-				<img id="skills-icon" src="static/img/language/css.svg">
-				<p>HTML&CSS- Web Front-end</p>
-				<br>
-				<h1>Other Tools</h1>
-				<h4>Software</h4>
-				<img id="skills-icon" src="static/img/software/excel.svg">
-				<img id="skills-icon" src="static/img/software/tableau.svg">
-				<img id="skills-icon" src="static/img/software/powerbi.svg">
-				<img id="skills-icon" src="static/img/software/rapidminer.svg">
-				<img id="skills-icon" src="static/img/software/docker.svg">
-				<img id="skills-icon" src="static/img/software/git.svg">
-				<p>MS Excel, Tableau, MS PowerBI, RapidMiner, Docker, Git</p>
-				<br>
-				<h4>Database</h4>
-				<img id="skills-icon" src="static/img/database/mysql.svg">
-				<img id="skills-icon" src="static/img/database/sqlite.svg">
-				<img id="skills-icon" src="static/img/database/postgresql.svg">	
-				<img id="skills-icon" src="static/img/database/mongodb.svg">
-				<p>MySQL, SQLite, PostgreSQL, MongoDB</p>
-				<br>
-				<h4>Kernel</h4>
-				<img id="skills-icon" src="static/img/os/linux.svg">
-				<p>Linux (Debian-based or Fedora)</p>
-				<br>
-				<h4>Deployment</h4>
-				<img id="skills-icon" src="static/img/deploy/aws.svg">
-				<img id="skills-icon" src="static/img/deploy/pythonanywhere.svg">
-				<p>AWS, Pythonanywhere</p>
-				
-			</dialog>
-		</div>
-		<div>
-			<dialog id="w">
-				<button id="close-dialog-btn" onclick="w.close()">✖</button>
+				<h4> ... </h4>
+				<p> ... </p>
+			</div>
+			<button class="menu-item-bg" id="back-button" onclick="b.close()"><h1>Back</h1></button>
+		</dialog>
+		<dialog id="w">
+			<div class="dialog-inner">
 				<h1>Work Experience</h1>
 				<h4>Back-End Developer Intern</h4>
 				<h4>3 July 23 - 31 October 23 (4 months)</h4>
 				<p>I worked in Business Development and Consumer Experience at Amarin Corporations Public Company Limited, a leading media and lifestyle company in Thailand. My job involves creating dashboards with Django Python frameworks to display summary statistics and visitor counts for trade exhibitions. I also use data visualization techniques to analyze visitor journeys and enhance customer satisfaction.</p>
-			</dialog>
-		</div>
-	</div>
-			
-	<section class="main-grid">
-		
-		<div class="card">
-			<img style="width: 80%; margin-left: 5vw; position: flex;" src="static/img/anim/frame1.png">
-		</div>
-
-		<div class="card">
-			<table class="menu-list">
-			  <tr>
-			    <td>
-   			    	<button onclick="w.showModal()" class="menu">
-   	    				<div class="menu-inner">
-   	    					<h1>Works</h1>
-   		    			</div>
-   	    			</button>
-   			    </td>
-   			   </tr>
-			  <tr>
-			    <td>
-			    	<button onclick="p.showModal()" class="menu">
-	    				<div class="menu-inner">
-	    					<h1>Projects</h1>
-		    			</div>
-	    			</button>
-	    		</td>
-			    <td>
-			    	<button onclick="b.showModal()" class="menu">
-	    				<div class="menu-inner">
-	    					<h1>Blog</h1>
-		    			</div>
-	    			</button>
-			    </td>
-			  </tr>
-			  <tr>
-			    <td>
-			    	<button onclick="c.showModal()" class="menu">
-						<div class="menu-inner">
-							<h1>Contact</h1>
-						</div>
-					</button>
-			    </td>
-			    <td>
-				    <button onclick="s.showModal()" class="menu">
-	    				<div class="menu-inner">
-	    					<h1>Skills</h1>
-		    			</div>
-	    			</button>
-			    </td>
-			  </tr>
-			</table>
-		</div>
-		
-	</section>
-
-	<div class="settings">
-		<div>
-			<dialog id="setting">
-				<button id="close-dialog-btn" onclick="setting.close()">✖</button>
+			</div>
+			<button class="menu-item-bg" id="back-button" onclick="w.close()"><h1>Back</h1></button>
+		</dialog>
+		<dialog id="o">
+			<div class="dialog-inner">
 				<h1>Change Language</h1>
-				<a href="/th" id="language-btn">🇹🇭 Thai</a>
-			</dialog>
-		</div>
-		<button onclick="setting.showModal()" id="setting-btn">
-			<img src="static/img/web-icon/cog.svg" height="30vh">
-		</button>
+				<a href="/th"><button class="menu-item-bg"><h1>🇹🇭 Thai</h1></button></a>
+			</div>
+			<button class="menu-item-bg" id="back-button" onclick="o.close()"><h1>Back</h1></button>
+		</dialog>
+		<dialog id="a">
+			<div class="dialog-inner">
+				<h1>About Me</h1>
+				<h4> ... </h4>
+				<p> ... </p>
+			</div>
+			<button class="menu-item-bg" id="back-button" onclick="a.close()"><h1>Back</h1></button>
+		</dialog>
 	</div>
-
-
+	<div class="menu">
+		<img src="static/img/titlescreen/title.png" class="title" id="center">
+		<br>
+		<button onclick="p.showModal()" class="menu-item-bg" id="center">
+			<h1>Projects</h1>
+		</button>
+		<button onclick="b.showModal()" class="menu-item-bg" id="center">
+			<h1>Blog</h1>
+		</button>
+		<button onclick="w.showModal()" class="menu-item-bg" id="center">
+			<h1>Work</h1>
+		</button>
+		<table class="menu-item-bg" id="center">
+			<tr>
+				<th>
+					<button onclick="o.showModal()" class="menu-item-sm">
+						<h1>Options..</h1>
+					</button>
+				</th>
+				<th>
+					<button onclick="a.showModal()" class="menu-item-sm">
+						<h1>About</h1>
+					</button>
+				</th>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>
