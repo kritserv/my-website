@@ -125,9 +125,6 @@ span:nth-child(7) {
 }
 
 .menu-item-bg {
-	width: clamp(200px, 60vw, 600px);
-	margin-bottom: 1rem;
-	height: clamp(60px, 8vh, 70px);
 	font-family: 'IBM Plex Sans Thai', sans-serif;
 	background-color: rgba(112, 112, 112, 0.8);
 	color: #ffffff;
@@ -168,10 +165,15 @@ span:nth-child(7) {
 	.menu-item-sm {
 		width: clamp(90px, 29vw, 490px);
 		margin-right: 5px;
-		height: clamp(60px, 8vh, 70px);
+		height: clamp(30px, 6vh, 50px);
+	}
+	.menu-item-bg {
+		width: clamp(200px, 60vw, 600px);
+		margin-bottom: 1rem;
+		height: 55px;
 	}
 	h1 {
-		font-size: 22px;
+		font-size: 15px;
 	}
 	.dialog-inner {
 		width: 70vw;
@@ -185,6 +187,11 @@ span:nth-child(7) {
 		height: clamp(60px, 8vh, 70px);
 		padding-left: 17px;
 		padding-right: 17px;
+	}
+	.menu-item-bg {
+		width: clamp(200px, 60vw, 600px);
+		margin-bottom: 1rem;
+		height: clamp(60px, 8vh, 70px);
 	}
 	.dialog-inner {
 		width: 30vw;
