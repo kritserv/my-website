@@ -4,7 +4,7 @@ html, body {margin: 0; height: 100%; overflow: hidden}
     
 body {
 	font-family: 'IBM Plex Sans Thai', sans-serif;
-	background-image: url(https://raw.githubusercontent.com/kritserv/my-website/main/static/img/titlescreen/background.png);
+	background-image: url(https://raw.githubusercontent.com/kritserv/my-website/main/static/img/titlescreen/background.webp);
 	background-position-x: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
