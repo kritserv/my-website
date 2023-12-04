@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;700&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;500;700');
 
 html, body {margin: 0; height: 100%; overflow: hidden}
     
@@ -128,11 +128,12 @@ span:nth-child(7) {
 	width: clamp(200px, 60vw, 600px);
 	margin-bottom: 1rem;
 	height: clamp(60px, 8vh, 70px);
-	font-family: 'VT323', monospace;
+	font-family: 'IBM Plex Sans Thai', sans-serif;
 	background-color: rgba(112, 112, 112, 0.8);
 	color: #ffffff;
 	border: 3px solid black;
 	transition: all .3s;
+	padding-bottom: 7px;
 }
 
 .menu-item-bg:hover {
@@ -148,10 +149,11 @@ span:nth-child(7) {
 }
 
 .menu-item-sm {
-	font-family: 'VT323', monospace;
+	font-family: 'IBM Plex Sans Thai', sans-serif;
 	background-color: rgba(112, 112, 112, 0.8);
 	color: #ffffff;
 	border: 3px solid black;
+	padding-bottom: 7px;
 	transition: all .3s;
 }
 
@@ -168,7 +170,7 @@ span:nth-child(7) {
 		height: clamp(60px, 8vh, 70px);
 	}
 	h1 {
-		font-size: 20px;
+		font-size: 22px;
 	}
 	.dialog-inner {
 		width: 70vw;
