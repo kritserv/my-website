@@ -176,6 +176,13 @@ span:nth-child(7) {
 	.dialog-inner {
 		width: 70vw;
 	}
+	#special-message {
+		position: absolute;
+		top: clamp(120px, 14vw, 150px);
+		right:clamp(12px, 15vw, 1000px);
+		floating: right;
+		font-size:clamp(14px, 5vw, 50px);
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -194,7 +201,36 @@ span:nth-child(7) {
 	.dialog-inner {
 		width: 30vw;
 	}
+	#special-message {
+		position: absolute;
+		left: calc(50vw + 300px);
+		top: 170px;
+		font-size: clamp(30px, 4vw, 50px);
+	}
 	
+}
+
+#special-message {
+	color: yellow;
+	font-family: 'VT323', monospace;
+	animation: zoom-in-and-out 2s linear infinite;
+	
+}
+
+@keyframes zoom-in-and-out
+{
+	0% {
+		transform: scale(1) rotate(-7deg);
+		opacity: 1;
+	}
+	50% {
+		transform: scale(1.1) rotate(-8deg);
+		opacity: 1;
+	}
+	100% {
+		transform: scale(1) rotate(-7deg);
+		opacity: 1;
+	}
 }
 
 #center {
