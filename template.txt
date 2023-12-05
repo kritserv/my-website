@@ -4,52 +4,52 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<link rel="stylesheet" type="text/css" href="static/css/main.css">
+	<link rel="stylesheet" type="text/css" href="{{css-path}}">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦉</text></svg>">
-	<title>Home | Krittipoom Personal Website</title>
+	<title>{{title}}</title>
 	
 </head>
 <body>
 	<div class="hidden-dialog">
 		<dialog id="p">
 			<div class="dialog-inner">
-				<h1>Projects</h1>
-				<h4>...</h4>
-				<p>...</p>
+				<h1>{{project-dialog-1}}</h1>
+				<h4>{{project-dialog-2}}</h4>
+				<p>{{project-dialog-3}}</p>
 			</div>
-			<button class="menu-item-bg" id="back-button" onclick="p.close()"><h1>Back</h1></button>
+			<button class="menu-item-bg" id="back-button" onclick="p.close()"><h1>{{back-button}}</h1></button>
 		</dialog>
 		<dialog id="b">
 			<div class="dialog-inner">
-				<h1>Blog</h1>
-				<h4>...</h4>
-				<p>...</p>
+				<h1>{{blog-dialog-1}}</h1>
+				<h4>{{blog-dialog-2}}</h4>
+				<p>{{blog-dialog-3}}</p>
 			</div>
-			<button class="menu-item-bg" id="back-button" onclick="b.close()"><h1>Back</h1></button>
+			<button class="menu-item-bg" id="back-button" onclick="b.close()"><h1>{{back-button}}</h1></button>
 		</dialog>
 		<dialog id="w">
 			<div class="dialog-inner">
-				<h1>Work Experience</h1>
-				<h4>Back-End Developer Intern</h4>
-				<h4>3 July 23 - 31 October 23 (4 months)</h4>
-				<p>I worked in Business Development and Consumer Experience at Amarin Corporations Public Company Limited, a leading media and lifestyle company in Thailand. My job involves creating dashboards with Django Python frameworks to display summary statistics and visitor counts for trade exhibitions. I also use data visualization techniques to analyze visitor journeys and enhance customer satisfaction.</p>
+				<h1>{{work-dialog-1}}</h1>
+				<h4>{{work-dialog-2}}</h4>
+				<h4>{{work-dialog-3}}</h4>
+				<p>{{work-dialog-4}}</p>
 			</div>
-			<button class="menu-item-bg" id="back-button" onclick="w.close()"><h1>Back</h1></button>
+			<button class="menu-item-bg" id="back-button" onclick="w.close()"><h1>{{back-button}}</h1></button>
 		</dialog>
 		<dialog id="o">
 			<div class="dialog-inner">
-				<h1>Change Language</h1>
-				<a href="/th"><button class="menu-item-bg"><h1>🇹🇭 Thai</h1></button></a>
+				<h1>{{option-dialog-1}}</h1>
+				<a href="{{option-dialog-2}}"><button class="menu-item-bg"><h1>{{option-dialog-3}}</h1></button></a>
 			</div>
-			<button class="menu-item-bg" id="back-button" onclick="o.close()"><h1>Back</h1></button>
+			<button class="menu-item-bg" id="back-button" onclick="o.close()"><h1>{{back-button}}</h1></button>
 		</dialog>
 		<dialog id="a">
 			<div class="dialog-inner">
-				<h1>About Me</h1>
-				<h4>...</h4>
-				<p>...</p>
+				<h1>{{about-dialog-1}}</h1>
+				<h4>{{about-dialog-2}}</h4>
+				<p>{{about-dialog-3}}</p>
 			</div>
-			<button class="menu-item-bg" id="back-button" onclick="a.close()"><h1>Back</h1></button>
+			<button class="menu-item-bg" id="back-button" onclick="a.close()"><h1>{{back-button}}</h1></button>
 		</dialog>
 	</div>
 	<section>
@@ -66,24 +66,24 @@
 		<h2 id="special-message">Hello World</h2>
 		<br>
 		<button onclick="p.showModal()" class="menu-item-bg" id="center">
-			<h1>Projects</h1>
+			<h1>{{menu-1}}</h1>
 		</button>
 		<button onclick="b.showModal()" class="menu-item-bg" id="center">
-			<h1>Blog</h1>
+			<h1>{{menu-2}}</h1>
 		</button>
 		<button onclick="w.showModal()" class="menu-item-bg" id="center">
-			<h1>Work</h1>
+			<h1>{{menu-3}}</h1>
 		</button>
 		<table class="table" id="center">
 			<tr>
 				<th>
 					<button onclick="o.showModal()" class="menu-item-sm">
-						<h1>Options..</h1>
+						<h1>{{menu-4}}</h1>
 					</button>
 				</th>
 				<th>
 					<button onclick="a.showModal()" class="menu-item-sm">
-						<h1>About</h1>
+						<h1>{{menu-5}}</h1>
 					</button>
 				</th>
 			</tr>
