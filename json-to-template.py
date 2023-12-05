@@ -1,6 +1,7 @@
 from json import load
 
 def JsonToTmpl(jsonfile, tmplfile, outputfile):
+
     with open(jsonfile) as f:
         json_dict = load(f)
 

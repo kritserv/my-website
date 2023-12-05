@@ -46,8 +46,62 @@
 		<dialog id="a">
 			<div class="dialog-inner">
 				<h1>{{about-dialog-1}}</h1>
-				<h4>{{about-dialog-2}}</h4>
+				<br>
+				<p><b>{{about-dialog-2}}</b></p>
 				<p>{{about-dialog-3}}</p>
+				<p><b>{{about-dialog-4}}</b></p>
+				<p>{{about-dialog-5}}</p>
+				<p><b>{{about-dialog-6}}</b></p>
+				<p>{{about-dialog-7}}</p>
+				<p><b>{{about-dialog-8}}</b></p>
+				<p>{{about-dialog-9}}</p>
+				<p><b>{{about-dialog-10}}</b></p>
+				<p>{{about-dialog-11}}</p>
+				<p>{{about-dialog-12}}</p>
+				<br>
+				<h1>{{about-dialog-13}}</h1>
+				<p>krittipoom@outlook.com</p>
+				<a href="https://github.com/kritserv" target="blank">GitHub</a>
+				<a href="https://www.linkedin.com/in/krittipoom-phalachun-a459591b5" target="blank">linkedIn</a>
+				<a href="https://stackoverflow.com/users/21557915/kritserv" target="blank">Stackoverflow</a>
+				<br>
+				<br>
+				<br>
+				<h1>{{about-dialog-14}}</h1>
+				<h4>{{about-dialog-15}}</h4>
+				<img id="skill-icon" src="static/img/language/python.svg">
+				<p>{{about-dialog-16}}</p>
+				<img id="skill-icon" src="static/img/language/r.svg">
+				<p>{{about-dialog-17}}</p>
+				<img id="skill-icon" src="static/img/language/go.svg">
+				<p>{{about-dialog-18}}</p>
+				<img id="skill-icon" src="static/img/language/bash.svg">
+				<p>{{about-dialog-19}}</p>
+				<img id="skill-icon" src="static/img/language/html.svg">
+				<img id="skill-icon" src="static/img/language/css.svg">
+				<p>{{about-dialog-20}}</p>
+				<h4>{{about-dialog-21}}</h4>
+				<p><b>{{about-dialog-22}}</b></p>
+				<img id="skill-icon" src="static/img/software/excel.svg">
+				<img id="skill-icon" src="static/img/software/tableau.svg">
+				<img id="skill-icon" src="static/img/software/powerbi.svg">
+				<img id="skill-icon" src="static/img/software/rapidminer.svg">
+				<img id="skill-icon" src="static/img/software/docker.svg">
+				<img id="skill-icon" src="static/img/software/git.svg">
+				<p>{{about-dialog-23}}</p>
+				<p><b>{{about-dialog-24}}</b></p>
+				<img id="skill-icon" src="static/img/database/mysql.svg">
+				<img id="skill-icon" src="static/img/database/sqlite.svg">
+				<img id="skill-icon" src="static/img/database/postgresql.svg">
+				<img id="skill-icon" src="static/img/database/mongodb.svg">
+				<p>{{about-dialog-25}}</p>
+				<p><b>{{about-dialog-26}}</b></p>
+				<img id="skill-icon" src="static/img/os/linux.svg">
+				<p>{{about-dialog-27}}</p>
+				<p><b>{{about-dialog-28}}</b></p>
+				<img id="skill-icon" src="static/img/deploy/aws.svg">
+				<img id="skill-icon" src="static/img/deploy/pythonanywhere.svg">
+				<p>{{about-dialog-29}}</p>
 			</div>
 			<button class="menu-item-bg" id="back-button" onclick="a.close()"><h1>{{back-button}}</h1></button>
 		</dialog>

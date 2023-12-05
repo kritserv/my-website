@@ -11,6 +11,27 @@ body {
 	background-size: cover;
 }
 
+a {
+	color: lightblue;
+	margin-left: 0.5rem;
+}
+
+b {
+	color: white;
+}
+
+p {
+	color: #cbd0d6;
+	margin-left: 0.5rem;
+}
+
+#skill-icon {
+	width: 39px;
+	background-color: white;
+	border-radius: 25%;
+	padding: 2px;
+}
+
 section {
 	margin: 0;
 	position: absolute;
