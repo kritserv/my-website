@@ -14,8 +14,34 @@
 		<dialog id="p">
 			<div class="dialog-inner">
 				<h1>{{project-dialog-1}}</h1>
-				<h4>{{project-dialog-2}}</h4>
-				<p>{{project-dialog-3}}</p>
+				<a href="#webdev">{{project-dialog-2}}</a>|
+				<a href="#ml">{{project-dialog-3}}</a>|
+				<a href="#research">{{project-dialog-4}}</a>|
+				<a href="#other">{{project-dialog-5}}</a>
+				<h1 id="webdev">{{project-dialog-6}}</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/django_online_store.webp">
+					<h4><a href="https://github.com/kritserv/django_online_store" target="blank">{{project-dialog-7}}</a></h4>
+					<p>{{project-dialog-8}}</p>
+				</div>
+				<h1 id="ml">{{project-dialog-9}}</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/fake_or_real_voice_classification.webp">
+					<h4><a href="https://github.com/kritserv/FOR-fake-or-real-dataset-classification" target="blank">{{project-dialog-10}}</a></h4>
+					<p>{{project-dialog-11}}</p>
+				</div>
+				<h1 id="research">{{project-dialog-12}}</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/research_article.webp">
+					<h4><a href="https://ph01.tci-thaijo.org/index.php/KKUSciJ/article/view/252903" target="blank">{{project-dialog-13}}</a></h4>
+					<p>{{project-dialog-14}}</p>
+				</div>
+				<h1 id="other">{{project-dialog-15}}</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/github_display_card.webp">
+					<h4><a href="https://github.com/kritserv/githubstat-display-card" target="blank">{{project-dialog-16}}</a></h4>
+					<p>{{project-dialog-17}}</p>
+				</div>
 			</div>
 			<button class="menu-item-bg" id="back-button" onclick="p.close()"><h1>{{back-button}}</h1></button>
 		</dialog>

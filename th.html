@@ -14,8 +14,34 @@
 		<dialog id="p">
 			<div class="dialog-inner">
 				<h1>โปรเจกต์</h1>
-				<h4>...</h4>
-				<p>...</p>
+				<a href="#webdev">การพัฒนาเว็บ</a>|
+				<a href="#ml">แมชชีนเลิร์นนิง</a>|
+				<a href="#research">งานวิจัย</a>|
+				<a href="#other">อื่นๆ</a>
+				<h1 id="webdev">#การพัฒนาเว็บ</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/django_online_store.webp">
+					<h4><a href="https://github.com/kritserv/django_online_store" target="blank">E-commerce Store Mockup</a></h4>
+					<p>มอคอัพร้านค้าอีคอมเมิร์ซออนไลน์ที่สร้างด้วย Python Django โดยมีฟีเจอร์ ได้แก่ การค้นหาสินค้า การสืบค้นสินค้า การจัดการตะกร้าสินค้า แบบฟอร์มชำระเงิน และการเข้าสู่ระบบของผู้ใช้งาน</p>
+				</div>
+				<h1 id="ml">#แมชชีนเลิร์นนิง</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/fake_or_real_voice_classification.webp">
+					<h4><a href="https://github.com/kritserv/FOR-fake-or-real-dataset-classification" target="blank">FOR Voice Classification</a></h4>
+					<p>Python Notebook สำหรับจำแนกเสียงปลอมและเสียงจริง (จากชุดข้อมูล FOR) โดยใช้เทคนิคการเรียนรู้ของเครื่อง: CNN และ MFCC</p>
+				</div>
+				<h1 id="research">#งานวิจัย</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/research_article.webp">
+					<h4><a href="https://ph01.tci-thaijo.org/index.php/KKUSciJ/article/view/252903" target="blank">วารสาร วิทยาศาสตร์ มข. ปี 2023 (ภาษาไทย)</a></h4>
+					<p>การรู้จำเสียงสังเคราะห์ปัญญาประดิษฐ์และเสียงมนุษย์ ด้วยโครงข่ายประสาทเทียมแบบคอนโวลูชัน งานวิจัยนี้มีวัตถุประสงค์เพื่อแยกแยะระหว่างเสียงจริงและเสียงสังเคราะห์ เพื่อป้องกันอาชญากรรมที่เกิดจากการแอบอ้างด้วยเสียงโดยใช้เทคโนโลยีดีพเฟค</p>
+				</div>
+				<h1 id="other">#อื่นๆ</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/github_display_card.webp">
+					<h4><a href="https://github.com/kritserv/githubstat-display-card" target="blank">Githubstat Display Card</a></h4>
+					<p>Githubstat Display Card คือการ์ดที่แสดงสถิติ Github ของผู้ใช้และสามารถเพิ่มลงในโปรไฟล์ส่วนตัวได้ ทำงานโดยใช้ Python เพื่อขูดข้อมูลจาก Github ในแต่ละวันโดยอัตโนมัติซึ่งใช้ bot ของ GitHub และจะสร้างรูปภาพขึ้นด้วย python svgwrite</p>
+				</div>
 			</div>
 			<button class="menu-item-bg" id="back-button" onclick="p.close()"><h1>ถอยกลับ</h1></button>
 		</dialog>

@@ -289,3 +289,22 @@ dialog[open] {
 	margin-right: 3rem;
 	margin-top: 2rem;
 }
+
+.card {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 10px;
+	padding-bottom: 7px;
+	border-radius: 16%;
+}
+
+#project-img {
+	width: 80%;
+	border-radius: 16%;
+	transition: all .3s;
+}
+
+#project-img:hover {
+	width: 85%;
+	border-radius: 0%;
+	transition: all .3s;
+}

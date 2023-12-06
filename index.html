@@ -14,8 +14,34 @@
 		<dialog id="p">
 			<div class="dialog-inner">
 				<h1>Projects</h1>
-				<h4>...</h4>
-				<p>...</p>
+				<a href="#webdev">web development</a>|
+				<a href="#ml">machine learning</a>|
+				<a href="#research">research article</a>|
+				<a href="#other">others</a>
+				<h1 id="webdev">#Web Development</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/django_online_store.webp">
+					<h4><a href="https://github.com/kritserv/django_online_store" target="blank">E-commerce Store Mockup</a></h4>
+					<p>This is a mockup of an online e-commerce store built with Python Django. It includes features such as: product search, product query, product cart manager, checkout form, and user login.</p>
+				</div>
+				<h1 id="ml">#Machine learning</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/fake_or_real_voice_classification.webp">
+					<h4><a href="https://github.com/kritserv/FOR-fake-or-real-dataset-classification" target="blank">FOR Voice Classification</a></h4>
+					<p>This is a Python notebook for classifying fake and real voices (from the FOR Dataset) using machine learning techniques: CNN and MFCC.</p>
+				</div>
+				<h1 id="research">#Research article</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/research_article.webp">
+					<h4><a href="https://ph01.tci-thaijo.org/index.php/KKUSciJ/article/view/252903" target="blank">KKU Science Journal 2023 (Thai language)</a></h4>
+					<p>Real Human Voice and Artificial Intelligence Synthetic Voice Recognition with Convolutional Neural Networks. This research aims to distinguish between real human voices and synthesized voices in order to prevent crime resulting from voice impersonation using deepfake voice technology.</p>
+				</div>
+				<h1 id="other">#Others</h1>
+				<div class="card">
+					<img id="project-img" src="static/img/project/github_display_card.webp">
+					<h4><a href="https://github.com/kritserv/githubstat-display-card" target="blank">Githubstat Display Card</a></h4>
+					<p>Githubstat Display Card is a card that shows your Github stats and can be added to your profile's markdown file. It uses Python to scrape data from Github daily and automatically using a Github workflows bot. It is inspired by neofetch and built with python svgwrite.</p>
+				</div>
 			</div>
 			<button class="menu-item-bg" id="back-button" onclick="p.close()"><h1>Back</h1></button>
 		</dialog>
