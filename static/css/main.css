@@ -25,6 +25,12 @@ p {
 	margin-left: 0.5rem;
 }
 
+#country-flag {
+	position: absolute;
+	left: clamp(20px, 20vw, 260px);
+	width: 45px;
+}
+
 #skill-icon {
 	width: 39px;
 	background-color: white;

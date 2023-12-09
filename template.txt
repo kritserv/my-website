@@ -65,7 +65,7 @@
 		<dialog id="o">
 			<div class="dialog-inner">
 				<h1>{{option-dialog-1}}</h1>
-				<a href="{{option-dialog-2}}"><button class="menu-item-bg"><h1>{{option-dialog-3}}</h1></button></a>
+				<a href="{{option-dialog-2}}"><button class="menu-item-bg"><img id="country-flag" src="static/img/settings/{{option-dialog-3}}"><h1>{{option-dialog-4}}</h1></button></a>
 			</div>
 			<button class="menu-item-bg" id="back-button" onclick="o.close()"><h1>{{back-button}}</h1></button>
 		</dialog>

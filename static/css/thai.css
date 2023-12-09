@@ -25,6 +25,12 @@ p {
 	margin-left: 0.5rem;
 }
 
+#country-flag {
+	position: absolute;
+	left: clamp(20px, 14vw, 210px);
+	width: 45px;
+}
+
 #skill-icon {
 	width: 39px;
 	background-color: white;
@@ -206,6 +212,9 @@ span:nth-child(7) {
 		floating: right;
 		font-size:clamp(14px, 5vw, 50px);
 	}
+	#country-flag {
+		top: 90px;
+	}
 }
 
 @media screen and (min-width: 1000px) {
@@ -229,6 +238,9 @@ span:nth-child(7) {
 		left: calc(50vw + 300px);
 		top: 170px;
 		font-size: clamp(30px, 4vw, 50px);
+	}
+	#country-flag {
+		top: 130px;
 	}
 	
 }
