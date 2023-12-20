@@ -48,8 +48,24 @@
 		<dialog id="b">
 			<div class="dialog-inner">
 				<h1>{{blog-dialog-1}}</h1>
-				<h4>{{blog-dialog-2}}</h4>
-				<p>{{blog-dialog-3}}</p>
+				<div class="card">
+					<img id="project-img" src="{{blog-dialog-2}}">
+					<h4><a href="{{blog-dialog-3}}" target="blank">{{blog-dialog-4}}</a></h4>
+					<p>{{blog-dialog-5}}</p>
+				</div>
+				<br>
+				<div class="card">
+					<img id="project-img" src="{{blog-dialog-6}}">
+					<h4><a href="{{blog-dialog-7}}" target="blank">{{blog-dialog-8}}</a></h4>
+					<p>{{blog-dialog-9}}</p>
+				</div>
+				<br>
+				<div class="card">
+					<h4><a href="{{blog-dialog-10}}" target="blank">{{blog-dialog-11}}</a></h4>
+					<p>{{blog-dialog-12}}</p>
+				</div>
+				<br>
+				<br>
 			</div>
 			<button class="menu-item-bg" id="back-button" onclick="b.close()"><h1>{{back-button}}</h1></button>
 		</dialog>
