@@ -1,3 +1,1 @@
-# Website
-
-[open](https://www.krittipoom.com/)
+[open](https://kritserv.8bits.sbs/)
